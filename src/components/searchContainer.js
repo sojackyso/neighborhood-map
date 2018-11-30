@@ -4,18 +4,17 @@ import escapeRegExp from 'escape-string-regexp'
 
 
 class SearchContainer extends Component {
-
 		state = {
 			query: '',
 			locationsSearchResult: []
-	}
-
+	   }
 		updateQuery = (query) => {
 			this.setState({
 			query: query
-		})
-	}
-
+		  })
+	   }
+     // https://github.com/tomchentw/react-google-maps/issues/66
+     // support for letPlaces issue
 		searchLocations = (query) => {
 		let filteredLocations
 		let locations = this.props.locationsToUse
@@ -38,18 +37,14 @@ class SearchContainer extends Component {
 
 		result = {locationsHasItems: locationsHasItems	, filteredLocations: filteredLocations}
 
-
 		return result
 		}
-
 			handleTextChange = (query, event) => {
 				this.updateQuery(query)
 				let result = this.searchLocations(query)
 				this.props.onUserDidSearch(result.filteredLocations, query)
 				this.setState({locationsSearchResult: result.filteredLocations})
-
-		}
-
+		  }
 	render(){
 		console.log('Can\'t find location - ', this.props.locationsNotFound)
 		return(
@@ -68,29 +63,25 @@ class SearchContainer extends Component {
 						tabIndex="0"
 					>
 
-
 						{((!this.props.locationsNotFound) && (this.props.locationsToUse.map(location => (
 							<li key={location.id}
 								tabIndex="0"
 								onClick={(event) => this.props.handleChildClickEvent(event, location.location, location.id)}
-							>
+							 >
 							{location.name}<br/>
 								{(this.props.selectedLocation === location.id ) && <span className="search-list-address">
 								Type of place: {location.categories[0].name}
 							</span> }
-			</li>
-		)
-		)))
-				}
-
-					</ul>
-
-
+			        </li>
+		          )
+            )))
+		        }
+					  </ul>
 				</div>
 			</div>
-		)
-	}
-}
+		  )
+	   }
+   }
 
 
 
