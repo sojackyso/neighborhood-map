@@ -292,16 +292,23 @@ When a user clicks on the marker, execute a function to change content and open 
 
 7. Add location search function
 #### Filter results
+https://www.youtube.com/watch?v=OlVkYnVXPl0
 
 8. Add simplified list view for quick browsing of all locations
 #### List view
+https://hashnode.com/post/how-can-i-add-items-to-object-lists-reactjs-cj8lu9fsu02gd00wuqkss1ixf
 
 9. Ensure responsiveness for phone, tablet, and desktop views
 #### Breakpoints to use
+Good guides -
 phone - @media only screen and (max-width: 480px) {}
 tablet - @media only screen and (max-width: 768px) {}
 desktop - @media only screen and (max-width : 1200px) {}
 large display - @media only screen and (min-width : 1520px) {}
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
+Use grid system as practiced in course and in email dev projectsL
+https://ux.mailchimp.com/patterns
 
 10. Use Foursquare API (satisfy requirement of using at least one 3rd Party, non-Google API)
 https://css-tricks.com/using-data-in-react-with-the-fetch-api-and-axios/
