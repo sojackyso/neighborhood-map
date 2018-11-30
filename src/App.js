@@ -19,7 +19,7 @@ class App extends Component {
 		locationsToUse: [],
 		locationsNotFound: false,
 		newCenter: { lat: 25.8142, lng: -80.1399 },
-		zoom: 14,
+		zoom: 17,
 		isOpen: false,
 		selectedLocation: {},
 		query: ''
@@ -75,7 +75,7 @@ class App extends Component {
     if(searchResultArr) {
       this.setState((state) => ({
           locationsToUse: searchResultArr,
-		  zoom: 14,
+		  zoom: 17,
 		  newCenter: { lat: 25.8142, lng: -80.1399 },
 		  locationsNotFound: false
       }))

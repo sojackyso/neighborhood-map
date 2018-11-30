@@ -412,7 +412,7 @@ If you want to write it to the DOM, pass a string instead: id="true" or id={valu
 ### Responsive Design
 1. At 599 px, the list width does not match up with the header, map, and footer
 Display order (top to bottom) - header, map, search bar, list, footer
-#### width at 90% matches header, map, and footer widths
+#### search-container width at 96% matches header, map, and footer widths
 This resolved the mismatch issue.
 
 2. At 600 px, the search bar ("filter by...") and list moves to the left, with the map on the right. This looks good. Good breakpoint.
@@ -421,6 +421,10 @@ This resolved the mismatch issue.
 #### Change padding from px --> em --> %
 padding: 2% allows inherited property of padding.
 This resolved the gap.
+
+4. At 862px, the footer-container cut-off the footer info.
+#### Adjust footer-container to 50%
+This resolved the display issue and looks clean.
 
 # Preparing for Commit
 Not committing node_modules folder (lots of files)
