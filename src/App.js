@@ -131,7 +131,7 @@ class App extends Component {
 				zoom = { this.state.zoom }
 				handleChildClickEvent = { this.handleChildClickEvent }
 				isOpen = { this.state.isOpen }
-		 		googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2xjqXIDoQTCybiOeYjAJSX80VmGsT4w&v=3.exp&libraries=geometry,drawing,places`}
+		 		googleMapURL={`https://maps.googleapis.com/maps/api/js?key=[REDACTED]&v=3.exp&libraries=geometry,drawing,places`}
 				loadingElement={<div style={{ height: `100%` }} />}
 				containerElement={<div id="map-container" aria-label="map container" tabIndex="0" role="application" style={{ height: `700px` }} />}
 				mapElement={<div style={{ height: `100%` }} />}
