@@ -279,7 +279,7 @@ Code switching how-tos here: https://www.mapbox.com/help/google-to-mapbox/
 4. Add Google Maps API key to code
  resource: https://developers.google.com/maps/documentation/javascript/tutorial
  https://www.fullstackreact.com/articles/how-to-write-a-google-maps-react-component/
- Udacity Neighborhood Map Key - AIzaSyCB2xjqXIDoQTCybiOeYjAJSX80VmGsT4w
+ Udacity Neighborhood Map Key - [REDACTED]
 #### If map doesn't show in localhost, change map height from '100%'' to '100vh'
 Also specify window.google.maps.Map to App.js file to get map to display in window
 
